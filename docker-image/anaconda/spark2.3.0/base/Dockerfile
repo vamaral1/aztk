@@ -18,8 +18,8 @@ RUN wget --quiet https://repo.continuum.io/archive/${ANACONDA_VERSION}-Linux-x86
     && echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc \
     # reset default python to 3.5
     && rm /usr/bin/python \
-    && ln -s /usr/bin/python3.5 /usr/bin/python
-    && pip install --upgrade pip
+    && ln -s /usr/bin/python3.5 /usr/bin/python \
+    && pip install --upgrade pip \
     && pip install pyarrow==0.9.0
 
 CMD ["/bin/bash"]
