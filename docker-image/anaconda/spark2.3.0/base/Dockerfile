@@ -20,6 +20,6 @@ RUN wget --quiet https://repo.continuum.io/archive/${ANACONDA_VERSION}-Linux-x86
     && rm /usr/bin/python \
     && ln -s /usr/bin/python3.5 /usr/bin/python \
     && pip install --upgrade pip \
-    && pip install pyarrow==0.9.0.post1
+    && pip install pyarrow==0.9.0
 
 CMD ["/bin/bash"]
