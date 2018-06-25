@@ -8,7 +8,7 @@ ENV AZTK_DOCKER_IMAGE_VERSION 0.1.0
 ENV AZTK_PYTHON_VERSION=3.5.2
 
 # modify these ARGs on build time to specify your desired versions of Spark/Hadoop
-ENV SPARK_VERSION_KEY 2.3.0
+ENV SPARK_VERSION_KEY 2.3.1
 ENV SPARK_FULL_VERSION spark-${SPARK_VERSION_KEY}-bin-without-hadoop
 ENV HADOOP_VERSION 2.8.3
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
