@@ -1,4 +1,4 @@
-FROM aztk/spark:v0.1.0-spark2.3.0-base
+FROM victorama/spark
 
 ARG ANACONDA_VERSION=Anaconda3-5.1.0
 
