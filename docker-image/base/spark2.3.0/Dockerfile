@@ -55,7 +55,7 @@ RUN apt-get clean \
     && apt-get remove -y python3-pip \
     # build and install spark
     # https://spark.apache.org/downloads.html
-    && git clone git://github.com/apache/spark.git -b branch-2.3
+    && git clone git://github.com/apache/spark.git -b branch-2.3 \
     && cd spark \
     && export MAVEN_OPTS="-Xmx3g -XX:ReservedCodeCacheSize=1024m" \
     && ./dev/make-distribution.sh --name custom-spark --pip --tgz -Pnetlib-lgpl -Phive -Phive-thriftserver -Dhadoop.version=${HADOOP_VERSION} -DskipTests \
