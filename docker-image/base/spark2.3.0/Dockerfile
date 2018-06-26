@@ -54,7 +54,6 @@ RUN apt-get clean \
     && /usr/bin/python -m pip install --upgrade pip setuptools wheel \
     && apt-get remove -y python3-pip \
     # build and install spark
-    # https://spark.apache.org/downloads.html
     && git clone git://github.com/apache/spark.git -b branch-2.3 \
     && cd spark \
     && export MAVEN_OPTS="-Xmx3g -XX:ReservedCodeCacheSize=1024m" \
